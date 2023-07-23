@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Rock, Paper, Scissors Game</title>
+    
+  <script type="module" crossorigin src="/assets/index-2b0dcf62.js"></script>
+  <link rel="stylesheet" href="/assets/index-9a33f533.css">
+</head>
+<body>
+    <main>
+        <div id="player-screen">
+            <video autoplay="true"></video>
+            <canvas></canvas>
+            <div id="loaded-status-div">
+                <p>Loading status: <span id="loaded-status">...</span></p>
+            </div>
+        </div>
+        <p>Your gesture is: <span id="gesture-text">N/A</span></p>
+        <div id="buttons">
+            <button id="auto-button">Click me to play automatically</button>
+            <button id="manual-button">Click me to play manually</button>
+        </div>
+        <div>
+            <p>Mode: <span id="mode"></span></p>
+        </div>
+        <div id="info">
+            <div>
+                <p>Player choose: <span id="player-choice">N/A</span></p>
+                <p>Player score: <span id="player-score">0</span></p>
+            </div>
+            <div>
+                <p>Computer choose: <span id="computer-choice">N/A</span></p>
+                <p>Computer score: <span id="computer-score">0</span></p>
+            </div>
+        </div>
+        <div id="result-div">
+            <p id="result"></p>
+        </div>
+    </main>
+
+    
+</body>
+</html>
