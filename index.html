@@ -6,41 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hand Gesture Rock, Paper, Scissors Game</title>
     
-  <script type="module" crossorigin src="/assets/index-0936e965.js"></script>
-  <link rel="stylesheet" href="/assets/index-9a33f533.css">
+  <script type="module" crossorigin src="/assets/index-7027e888.js"></script>
+  <link rel="stylesheet" href="/assets/index-49b6f142.css">
 </head>
 <body>
     <main>
-        <div id="player-screen">
-            <video autoplay="true"></video>
-            <canvas></canvas>
-            <div id="loaded-status-div">
-                <p>Loading status: <span id="loaded-status">...</span></p>
+        <section>
+            <div id="player-screen">
+                <video autoplay="true"></video>
+                <canvas></canvas>
+                <div id="loaded-status-div">
+                    <p>Loading status: <span id="loaded-status">...</span></p>
+                </div>
             </div>
-        </div>
-        <p>Your gesture is: <span id="gesture-text">N/A</span></p>
-        <div id="buttons">
-            <button id="auto-button">Click me to play automatically</button>
-            <button id="manual-button">Click me to play manually</button>
-        </div>
-        <div>
-            <p>Mode: <span id="mode"></span></p>
-        </div>
-        <div id="info">
-            <div>
-                <p>Player choose: <span id="player-choice">N/A</span></p>
-                <p>Player score: <span id="player-score">0</span></p>
+            <p>Your gesture is: <span id="gesture-text">N/A</span></p>
+            <div id="buttons">
+                <button id="auto-button">Click me to play automatically</button>
+                <button id="manual-button">Click me to play manually</button>
             </div>
             <div>
-                <p>Computer choose: <span id="computer-choice">N/A</span></p>
-                <p>Computer score: <span id="computer-score">0</span></p>
+                <p>Mode: <span id="mode">None</span></p>
             </div>
-        </div>
-        <div id="result-div">
-            <p id="result"></p>
-        </div>
+            <div id="info">
+                <div>
+                    <p>Player choose: <span id="player-choice">N/A</span></p>
+                    <p>Player score: <span id="player-score">0</span></p>
+                </div>
+                <div>
+                    <p>Computer choose: <span id="computer-choice">N/A</span></p>
+                    <p>Computer score: <span id="computer-score">0</span></p>
+                </div>
+            </div>
+            <div id="result-div">
+                <p id="result"></p>
+            </div>
+            <button id="open-how-to-play">How to play?</button>
+        </section>
     </main>
-
+    <div id="how-to-play">
+        <div>
+            <h2>How to play:</h2>
+            <ul>
+                <li>There are two options to play, either automatic (Click me to play automatically), or manually (Click me to play manually).</li>
+                <li>The "Mode" text tells you which mode you are using.</li>
+                <li>The automatic mode works by detecting what gesture you are showing every 0.5 seconds (either rock, paper, or scissors).</li>
+                <li>The manual mode works by detecting what gesture you are showing (either rock, paper, or scissors) when you click on the "Click me to play manually" button.I recommend keeping the same gesture for a few seconds because it can take a few seconds to detect what gesture you are showing.</li>
+            </ul>
+            <button id="close-how-to-play">Close</button>
+        </div>
+    </div>
+    
     
 </body>
 </html>
