@@ -1,6 +1,7 @@
 # TensorFlowJS Rock Paper Scissors
 
 This project used Vite, Vanilla JavaScript, and TensorFlowJS. \
+
 There are two ways to run this project:
 1. First, you must have NodeJS installed. Then, open the project in a terminal, and run the command:
 ```
